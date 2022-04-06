@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ElementXPaths>
+	<Elements>
+		<Element key="OpenPositionsFrame">//iframe[@id='HBIFRAME']</Element>
+		<Element key="OpenPositionItem">//span[@class='job']/a</Element>
+		<Element key="OpenPositionWithRequiredTitle">//span[@class='job']/a[text()='%1']</Element>
+
+	</Elements>
+</ElementXPaths>

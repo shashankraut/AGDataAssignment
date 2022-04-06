@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ElementXPaths>
+	<Elements>
+		<Element key="AGDataHome">//a[@class='site-title' and @rel='home']</Element>
+		<Element key="PageContent">//div[@id='page']</Element>
+
+		<Element key="MenuCompany">//nav[@id='site-navigation']//a[text()='Company']</Element>
+		<Element key="SubmenuCareers">//nav[@id='site-navigation']//a[text()='Careers']</Element>
+	</Elements>
+</ElementXPaths>

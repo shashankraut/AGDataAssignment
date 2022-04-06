@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDataAPIService", "AGDataAPIService\AGDataAPIService.csproj", "{74C3CAA6-11D8-47ED-A576-3E3E40381E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGDataAPITest", "AGDataAPITest\AGDataAPITest.csproj", "{3CCDE1E2-B78D-4E92-A593-D6DB5E9911C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDataAPITest", "AGDataAPITest\AGDataAPITest.csproj", "{3CCDE1E2-B78D-4E92-A593-D6DB5E9911C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGDataUITest", "AGDataUITest\AGDataUITest.csproj", "{0A6E7874-E223-4525-A13B-AB6805B1F6B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReporting", "TestReporting\TestReporting.csproj", "{6F602F31-AA3D-4F7E-903B-8511C37B203D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3CCDE1E2-B78D-4E92-A593-D6DB5E9911C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CCDE1E2-B78D-4E92-A593-D6DB5E9911C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CCDE1E2-B78D-4E92-A593-D6DB5E9911C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6E7874-E223-4525-A13B-AB6805B1F6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6E7874-E223-4525-A13B-AB6805B1F6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6E7874-E223-4525-A13B-AB6805B1F6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6E7874-E223-4525-A13B-AB6805B1F6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F602F31-AA3D-4F7E-903B-8511C37B203D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F602F31-AA3D-4F7E-903B-8511C37B203D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F602F31-AA3D-4F7E-903B-8511C37B203D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F602F31-AA3D-4F7E-903B-8511C37B203D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
