@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AGDataAPIService\AGDataAPIService.csproj" />
+    <ProjectReference Include="..\TestReporting\TestReporting.csproj" />
   </ItemGroup>
 
 </Project>

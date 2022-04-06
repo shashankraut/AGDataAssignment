@@ -30,7 +30,7 @@ namespace AGDataAPIService
 		/// <param name="method">Method type [e.g. Method.GET]</param>
 		/// <param name="payload">[Default null] payload data, required in case of PUT and POST methods</param>
 		/// <returns>returns prepared instance of ResrRequest</returns>
-		public static RestRequest CreateRequest(Method method, dynamic payload = null)
+		public static RestRequest CreateRequest(Method method, object payload = null)
 		{
 			var restRequest = new RestRequest(method);
 			restRequest.AddHeader("Accept", "application/json");

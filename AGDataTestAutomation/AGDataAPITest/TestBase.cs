@@ -1,10 +1,7 @@
-﻿using AGDataAPIService;
-using AventStack.ExtentReports;
+﻿using AventStack.ExtentReports;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using TestReporting;
 
 namespace AGDataAPITest
 {

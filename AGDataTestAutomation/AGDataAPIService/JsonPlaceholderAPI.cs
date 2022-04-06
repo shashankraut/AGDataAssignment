@@ -115,7 +115,7 @@ namespace AGDataAPIService
 		/// <typeparam name="DTO">DTO type</typeparam>
 		/// <param name="contents">Contents to deserialize</param>
 		/// <returns>Returns deserialized instance of DTO type</returns>
-		public DTO Deserialize<DTO>(dynamic contents)
+		public DTO Deserialize<DTO>(string contents)
 		{
 			DTO deserializeObject = JsonConvert.DeserializeObject<DTO>(contents);
 			return deserializeObject;

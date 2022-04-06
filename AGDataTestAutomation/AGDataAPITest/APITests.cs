@@ -7,7 +7,7 @@ using System.Linq;
 using KellermanSoftware.CompareNetObjects;
 using AventStack.ExtentReports;
 using System.IO;
-using Newtonsoft.Json;
+using TestReporting;
 
 namespace AGDataAPITest
 {

@@ -1,8 +1,12 @@
 ﻿using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
-using AventStack.ExtentReports.Reporter.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AGDataAPIService
+namespace TestReporting
 {
 	public static class Reporting
 	{
@@ -21,7 +25,7 @@ namespace AGDataAPIService
 		public static void SetupExtentReport(string reportName, string reportTitle, dynamic reportPath)
 		{
 			htmlReporter = new ExtentHtmlReporter(reportPath);
-			htmlReporter.Config.Theme = Theme.Standard;
+			htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Standard;
 			htmlReporter.Config.DocumentTitle = reportTitle;
 			htmlReporter.Config.ReportName = reportName;
 
