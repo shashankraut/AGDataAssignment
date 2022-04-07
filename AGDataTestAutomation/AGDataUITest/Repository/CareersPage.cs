@@ -34,6 +34,9 @@ namespace AGDataUITest.Repository
 			get { return RepositoryCommon.FetchXpathValue("OpenPositionItem", xmlDocument); }
 		}
 
+		/// <summary>
+		/// %1 shall be replaced with required value before using XPath
+		/// </summary>
 		public string OpenPositionWithRequiredTitle
 		{
 			get { return RepositoryCommon.FetchXpathValue("OpenPositionWithRequiredTitle", xmlDocument); }

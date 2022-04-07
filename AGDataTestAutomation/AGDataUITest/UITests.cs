@@ -19,6 +19,7 @@ namespace AGDataUITest
 		private HomePage homePage;
 		private CareersPage careersPage;
 		private SeleniumCommon seleniumCommon;
+		private AGDataTestCommon testCommon;
 
 		public UITests()
 		{
@@ -30,6 +31,7 @@ namespace AGDataUITest
 			chromeDriver.Manage().Window.Maximize();
 
 			seleniumCommon = new SeleniumCommon(chromeDriver);
+			testCommon = new AGDataTestCommon(chromeDriver);
 		}
 
 		[Test, Description("Sample AGData selenium UI test")]
@@ -43,13 +45,7 @@ namespace AGDataUITest
 			IWebElement pageContents = seleniumCommon.WaitForElementToPresent(homePage.PageContent, $"After navigating {Config.ApplicationUri.ToString()} page contents are not availble");
 			Assert.IsNotNull(pageContents, "Page contents not found");
 
-			//Select Company -> careers menu
-			IWebElement companyMenu = seleniumCommon.WaitForElementToPresent(homePage.MenuCompany, "Company primary menu not found");
-			seleniumCommon.MouseHover(companyMenu);
-
-			IWebElement careersMenu = seleniumCommon.WaitForElementToPresent(homePage.SubmenuCareers, "Careers submenu not found");
-			careersMenu.Click();
-			Reporting.Log(Status.Info, "Control switched to careers menu");
+			testCommon.NavigateToMenu(MainMenu.Company, SubMenu.Careers);
 
 			string currentAppUrl = chromeDriver.Url;
 			Assert.AreEqual(Path.Combine(Config.ApplicationUri.ToString(), "company/careers/"), currentAppUrl, "Application URL is not found as expected for Careers page");

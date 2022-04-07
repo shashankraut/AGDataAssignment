@@ -4,7 +4,7 @@
 		<Element key="AGDataHome">//a[@class='site-title' and @rel='home']</Element>
 		<Element key="PageContent">//div[@id='page']</Element>
 
-		<Element key="MenuCompany">//nav[@id='site-navigation']//a[text()='Company']</Element>
-		<Element key="SubmenuCareers">//nav[@id='site-navigation']//a[text()='Careers']</Element>
+		<Element key="MainMenu">//nav[@id='site-navigation']//a[text()='%1']</Element>
+		<Element key="SubMenu">//nav[@id='site-navigation']//a[text()='%1']</Element>
 	</Elements>
 </ElementXPaths>

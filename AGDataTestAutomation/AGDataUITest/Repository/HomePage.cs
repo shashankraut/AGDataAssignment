@@ -34,14 +34,20 @@ namespace AGDataUITest.Repository
 			get { return RepositoryCommon.FetchXpathValue("PageContent", xmlDocument); }
 		}
 
-		public string MenuCompany
+		/// <summary>
+		/// %1 shall be replaced with required value before using XPath
+		/// </summary>
+		public string MainMenu
 		{
-			get { return RepositoryCommon.FetchXpathValue("MenuCompany", xmlDocument); }
+			get { return RepositoryCommon.FetchXpathValue("MainMenu", xmlDocument); }
 		}
 
-		public string SubmenuCareers
+		/// <summary>
+		/// %1 shall be replaced with required value before using XPath
+		/// </summary>
+		public string SubMenu
 		{
-			get { return RepositoryCommon.FetchXpathValue("SubmenuCareers", xmlDocument); }
+			get { return RepositoryCommon.FetchXpathValue("SubMenu", xmlDocument); }
 		}
 	}
 }
